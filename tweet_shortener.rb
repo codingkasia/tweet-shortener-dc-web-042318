@@ -19,7 +19,7 @@ def word_substituter(string)
   string = string.split
   string.each do |word|
     dictionary.each do |k,v|
-      if(word === k)
+      if(word.upcase === k.upcase)
         word.replace(v)
       end 
     end
