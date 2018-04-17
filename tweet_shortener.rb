@@ -51,7 +51,7 @@ def shortened_tweet_truncator(str)
   if(str.length <= 140)
     return str
   end
-  word_substituter(str)
+  str = word_substituter(str)
   puts ("NEW STR length is #{str} " )
   puts ("NEW STR length is #{str.length} " )
   if(str.length >140  )
