@@ -52,6 +52,7 @@ def shortened_tweet_truncator(str)
     return str
   end
   word_substituter(str)
+  puts ("NEW STR length is #{str} " )
   if(str.length >140  )
   str = "#{str[0..139]}(...)"
 else
