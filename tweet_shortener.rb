@@ -55,7 +55,7 @@ def shortened_tweet_truncator(str)
   puts ("NEW STR length is #{str} " )
   puts ("NEW STR length is #{str.length} " )
   if(str.length >140  )
-  str = "#{str[0..139]}(...)"
+  str = "#{str[0..139]}..."
 else
   str
 end
