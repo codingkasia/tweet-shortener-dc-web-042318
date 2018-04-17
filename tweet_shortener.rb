@@ -48,6 +48,11 @@ def selective_tweet_shortener(string)
   string.join(" ")
 end
 def shortened_tweet_truncator(str)
+  if(str.length <= 140)
+    return str
+  end
+  word_substituter(str)
+  "#{str[0..139]}(...)"
 end
 
 
