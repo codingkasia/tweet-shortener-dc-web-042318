@@ -52,7 +52,7 @@ def shortened_tweet_truncator(str)
     return str
   end
   str = word_substituter(str[0..139])
-  str = "#{str[0..139]}(...)"
+  str = "#{str}(...)"
   str
 end
 
